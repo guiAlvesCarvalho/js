@@ -34,13 +34,13 @@ function mouseDownEvent (e) {
     mouseY = e.pageY - screen.offsetTop
 }
 
-function mouseMoveEvent () {
+function mouseMoveEvent (e) {
     if(canDraw) {
         draw(e.pageX, e.pageY)
     }
 }
 
-function mouseUpEvent () {
+function mouseUpEvent (e) {
     canDraw = false
 }
 
